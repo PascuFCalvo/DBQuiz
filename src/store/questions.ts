@@ -8,6 +8,10 @@ interface State {
     currentQuestion: number;
     fetchQuestions: (limit: number) => Promise<void>;
     selectAnswer: (questionId: number, answerIndex: number) => void;
+    goNextQuestion: () => void;
+    goPreviousQuestion: () => void;
+    resetGame: () => void;
+
 }
 
 export const useQuestionsStore = create<State>()(persist((set, get) => {
