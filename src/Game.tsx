@@ -28,7 +28,7 @@ const Question = ({ info }: { info: QuestionType }) => {
     };
 
     return (
-        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#222", p: 2, marginTop: 4 }}>
+        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#333", p: 2, marginTop: 4 }}>
             <Typography variant="h5">{info.question}</Typography>
 
             <SyntaxHighlighter language="javascript" style={gradientDark}>
