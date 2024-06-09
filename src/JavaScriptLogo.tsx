@@ -1,9 +1,9 @@
-import "./JavaScriptLogo.css"
+import React from "react";
+import "./JavaScriptLogo.css";
+import DBZ from "../src/assets/DBZ.png";
 
 export const JavascriptLogo = () => {
     return (
-        <img src="../src/assets/DBZ.png" alt="JavaScript Logo" />
-    )
-
-}
-
+        <img src={DBZ} alt="JavaScript Logo" />
+    );
+};
