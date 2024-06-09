@@ -1,34 +1,34 @@
-import { Button, Card, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material'
-import { type Question as QuestionType } from '../types'
-import { useQuestionsStore } from './store/questions'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { ArrowBack, ArrowForward } from '@mui/icons-material'
-import { Footer } from './Footer'
+import { Button, Card, IconButton, List, ListItem, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
+import { type Question as QuestionType } from '../types';
+import { useQuestionsStore } from './store/questions';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { gradientDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { Footer } from './Footer';
 
 const getBackgroundColor = (info: QuestionType, index: number) => {
-    const { userSelectedAnswer, correctAnswer } = info
-    if (userSelectedAnswer === null) return "transparent"
-    if (index !== correctAnswer && index !== userSelectedAnswer) return "transparent"
-    if (index === correctAnswer) return "rgba(0,255,0,0.2)"
-    if (index === userSelectedAnswer) return "rgba(255,0,0,0.2)"
-
-    return "transparent"
-}
+    if (info.userSelectedAnswer === undefined) {
+        return "#333";
+    } else if (info.userSelectedAnswer === index) {
+        return info.isCorrectUserAnswer ? "#4CAF50" : "#F44336";
+    } else if (info.correctAnswer === index) {
+        return "#4CAF50";
+    } else {
+        return "#333";
+    }
+};
 
 const Question = ({ info }: { info: QuestionType }) => {
-    const selectAnswer = useQuestionsStore(state => state.selectAnswer)
-    const goNextQuestion = useQuestionsStore(state => state.goNextQuestion)
+    const selectAnswer = useQuestionsStore(state => state.selectAnswer);
+    const goNextQuestion = useQuestionsStore(state => state.goNextQuestion);
 
-    // Función que genera handlers para los clicks de las respuestas
     const createHandleClick = (answerIndex: number) => () => {
-        selectAnswer(info.id, answerIndex)
-        setTimeout(goNextQuestion, 1000) // Espera 500ms antes de ir a la siguiente pregunta
-    }
+        selectAnswer(info.id, answerIndex);
+        setTimeout(goNextQuestion, 1000);
+    };
 
-    // Determina el color de fondo de cada respuesta
     return (
-        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#222", p: 2, marginTop: 4 }} >
+        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#222", p: 2, marginTop: 4 }}>
             <Typography variant="h5">{info.question}</Typography>
 
             <SyntaxHighlighter language="javascript" style={gradientDark}>
@@ -39,7 +39,7 @@ const Question = ({ info }: { info: QuestionType }) => {
                 {info.answers.map((answer, index) => (
                     <ListItem key={index} disablePadding divider>
                         <ListItemButton
-                            disabled={info.userSelectedAnswer !== null}
+                            disabled={info.userSelectedAnswer !== undefined}
                             onClick={createHandleClick(index)}
                             sx={{
                                 bgcolor: getBackgroundColor(info, index),
@@ -50,17 +50,17 @@ const Question = ({ info }: { info: QuestionType }) => {
                 ))}
             </List>
         </Card>
-    )
-}
+    );
+};
 
 export const Game = () => {
-    const questions = useQuestionsStore(state => state.questions)
-    const currentQuestion = useQuestionsStore(state => state.currentQuestion)
-    const resetGame = useQuestionsStore(state => state.resetGame)
-    const goNextQuestion = useQuestionsStore(state => state.goNextQuestion)
-    const goPreviousQuestion = useQuestionsStore(state => state.goPreviousQuestion)
+    const questions = useQuestionsStore(state => state.questions);
+    const currentQuestion = useQuestionsStore(state => state.currentQuestion);
+    const resetGame = useQuestionsStore(state => state.resetGame);
+    const goNextQuestion = useQuestionsStore(state => state.goNextQuestion);
+    const goPreviousQuestion = useQuestionsStore(state => state.goPreviousQuestion);
 
-    const questionInfo = questions[currentQuestion]
+    const questionInfo = questions[currentQuestion];
 
     return (
         <div>
@@ -73,11 +73,11 @@ export const Game = () => {
                     <ArrowForward />
                 </IconButton>
             </Stack>
-            <Question info={questionInfo} />
-            <Stack direction="row" gap={2} justifyContent="center" textAlign="center" style={{ marginTop: "16px" }} >
+            {questionInfo && <Question info={questionInfo} />}
+            <Stack direction="row" gap={2} justifyContent="center" textAlign="center" style={{ marginTop: "16px" }}>
                 <Footer />
                 <Button onClick={resetGame} variant="contained" sx={{ marginTop: 2 }}>Reiniciar</Button>
             </Stack>
         </div>
-    )
-}
+    );
+};

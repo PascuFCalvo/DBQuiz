@@ -8,12 +8,12 @@ export const Footer = () => {
 
     questions.forEach(question => {
         const { userSelectedAnswer, correctAnswer } = question
-        if (userSelectedAnswer === null) {
-            unanswered++
+        if (userSelectedAnswer === undefined) {
+            unanswered++;
         } else if (userSelectedAnswer === correctAnswer) {
-            correct++
+            correct++;
         } else {
-            incorrect++
+            incorrect++;
         }
     });
 

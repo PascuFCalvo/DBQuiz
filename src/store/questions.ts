@@ -11,7 +11,6 @@ interface State {
     goNextQuestion: () => void;
     goPreviousQuestion: () => void;
     resetGame: () => void;
-
 }
 
 export const useQuestionsStore = create<State>()(persist((set, get) => {
@@ -19,10 +18,10 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
         questions: [],
         currentQuestion: 0,
         fetchQuestions: async (limit: number) => {
-            const res = await fetch("http://localhost:5173/data.json");
+            const res = await fetch("http://localhost:5174/data.json");
             const data = await res.json();
             const questions = data.sort(() => Math.random() - 0.5).slice(0, limit);
-            // Inicializar userSelectedAnswer como null en cada pregunta
+            // Inicializar userSelectedAnswer como undefined en cada pregunta
             questions.forEach((question: Question) => {
                 question.userSelectedAnswer = undefined;
             });
@@ -31,7 +30,6 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
 
         selectAnswer: (questionId: number, answerIndex: number) => {
             const { questions } = get();
-            // Clonar el array de preguntas para no mutar el estado directamente
             const newQuestions = [...questions];
             const questionIndex = newQuestions.findIndex(question => question.id === questionId);
 
@@ -39,12 +37,11 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
                 const questionInfo = newQuestions[questionIndex];
                 const isCorrectUserAnswer = questionInfo.correctAnswer === answerIndex;
 
-                if (isCorrectUserAnswer) confetti()
+                if (isCorrectUserAnswer) confetti();
 
-                // Actualizar el estado de la pregunta con la respuesta seleccionada
                 newQuestions[questionIndex] = {
                     ...questionInfo,
-                    isCorrectUserAnser: isCorrectUserAnswer,
+                    isCorrectUserAnswer: isCorrectUserAnswer,
                     userSelectedAnswer: answerIndex
                 };
 
@@ -54,9 +51,9 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
 
         goNextQuestion: () => {
             const { currentQuestion, questions } = get();
-            const nextQuestion = currentQuestion + 1;;
+            const nextQuestion = currentQuestion + 1;
 
-            if (currentQuestion < questions.length) {
+            if (currentQuestion < questions.length - 1) {
                 set({ currentQuestion: nextQuestion });
             }
         },
@@ -77,6 +74,4 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
 }, {
     name: "questions-storage",
     getStorage: () => localStorage
-}))
-    // Path: src/types.d.ts
-    ;
+}));
