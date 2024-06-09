@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "question": "¿Cuál es el verdadero nombre de Goku?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Kakarotto",
+            "Vegeta",
+            "Raditz"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 2,
+        "question": "¿Quién derrotó a Cell en el torneo de Cell?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 3,
+        "question": "¿Cuál es la técnica de ataque característica de Vegeta?",
+        "code": "",
+        "answers": [
+            "Kamehameha",
+            "Makankosappo",
+            "Final Flash",
+            "Destructo Disk"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 4,
+        "question": "¿Quién es el maestro de Goku y Krillin?",
+        "code": "",
+        "answers": [
+            "Maestro Roshi",
+            "Korin",
+            "Kami",
+            "Mr. Popo"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 5,
+        "question": "¿Cuál es la transformación más poderosa de Goku?",
+        "code": "",
+        "answers": [
+            "Super Saiyan",
+            "Super Saiyan 3",
+            "Ultra Instinct",
+            "Kaioken"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 6,
+        "question": "¿Quién es el príncipe de los Saiyajin?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Vegeta",
+            "Broly",
+            "Nappa"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 7,
+        "question": "¿Cuál es el deseo principal de Goku en la serie?",
+        "code": "",
+        "answers": [
+            "Conquistar la Tierra",
+            "Ser el más fuerte",
+            "Resucitar a su padre",
+            "Obtener las Dragon Balls"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 8,
+        "question": "¿Quién es el creador de los Androides?",
+        "code": "",
+        "answers": [
+            "Dr. Brief",
+            "Dr. Gero",
+            "Bulma",
+            "Dr. Myu"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 9,
+        "question": "¿Quién mató a Frieza en Namek?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Vegeta",
+            "Trunks",
+            "Krillin"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 10,
+        "question": "¿Quién es el hermano mayor de Goku?",
+        "code": "",
+        "answers": [
+            "Raditz",
+            "Nappa",
+            "Vegeta",
+            "Turles"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 11,
+        "question": "¿Cuál es el nombre del planeta natal de Goku?",
+        "code": "",
+        "answers": [
+            "Tierra",
+            "Namek",
+            "Vegeta",
+            "Sadala"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 12,
+        "question": "¿Cuál es la fusión de Goku y Vegeta usando los pendientes Potara?",
+        "code": "",
+        "answers": [
+            "Gogeta",
+            "Vegito",
+            "Gotenks",
+            "Kefla"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 13,
+        "question": "¿Qué objeto usan Goku y sus amigos para teletransportarse instantáneamente?",
+        "code": "",
+        "answers": [
+            "Nube Voladora",
+            "Cápsula Hoi-Poi",
+            "Cámara del Tiempo",
+            "Instant Transmission"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 14,
+        "question": "¿Quién entrenó a Goku en el Otro Mundo?",
+        "code": "",
+        "answers": [
+            "King Kai",
+            "Grand Kai",
+            "North Kai",
+            "Supreme Kai"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 15,
+        "question": "¿Quién es el dios destructor del Universo 7?",
+        "code": "",
+        "answers": [
+            "Zeno",
+            "Whis",
+            "Beerus",
+            "Champa"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 16,
+        "question": "¿Quién es el guardián de la Tierra?",
+        "code": "",
+        "answers": [
+            "Mr. Popo",
+            "Kami",
+            "Dende",
+            "King Kai"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 17,
+        "question": "¿Quién ganó el primer torneo de artes marciales en el que participó Goku?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Jackie Chun",
+            "Tien",
+            "Krillin"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 18,
+        "question": "¿Qué forma de Buu absorbió a Gohan?",
+        "code": "",
+        "answers": [
+            "Kid Buu",
+            "Super Buu",
+            "Fat Buu",
+            "Evil Buu"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 19,
+        "question": "¿Cuál es el color del cabello de un Super Saiyan God?",
+        "code": "",
+        "answers": [
+            "Rubio",
+            "Rojo",
+            "Azul",
+            "Blanco"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 20,
+        "question": "¿Quién es el padre de Vegeta?",
+        "code": "",
+        "answers": [
+            "King Cold",
+            "King Vegeta",
+            "Bardock",
+            "Paragus"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 21,
+        "question": "¿Cómo se llama la forma evolucionada del Super Saiyan God?",
+        "code": "",
+        "answers": [
+            "Super Saiyan 2",
+            "Super Saiyan Blue",
+            "Ultra Instinct",
+            "Golden Frieza"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 22,
+        "question": "¿Quién creó las Dragon Balls en la Tierra?",
+        "code": "",
+        "answers": [
+            "Kami",
+            "King Kai",
+            "Guru",
+            "Dende"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 23,
+        "question": "¿Cuál es el nombre del villano principal de la Saga de los Saiyajin?",
+        "code": "",
+        "answers": [
+            "Nappa",
+            "Raditz",
+            "Vegeta",
+            "Frieza"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 24,
+        "question": "¿Cuál es la habilidad especial de Hit, el asesino legendario del Universo 6?",
+        "code": "",
+        "answers": [
+            "Kamehameha",
+            "Time-Skip",
+            "Galick Gun",
+            "Final Flash"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 25,
+        "question": "¿Qué objeto se usa para revivir a los personajes en Dragon Ball?",
+        "code": "",
+        "answers": [
+            "Senzu Bean",
+            "Dragon Radar",
+            "Dragon Balls",
+            "Namekian Balls"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 26,
+        "question": "¿Cómo se llama el torneo donde luchan los universos?",
+        "code": "",
+        "answers": [
+            "Tenkaichi Budokai",
+            "Cell Games",
+            "Tournament of Power",
+            "Other World Tournament"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 27,
+        "question": "¿Cuál es el nombre del padre de Goku?",
+        "code": "",
+        "answers": [
+            "King Vegeta",
+            "Bardock",
+            "Paragus",
+            "Gine"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 28,
+        "question": "¿Qué técnica usa Krillin que es un disco de energía cortante?",
+        "code": "",
+        "answers": [
+            "Kamehameha",
+            "Solar Flare",
+            "Destructo Disk",
+            "Tri-Beam"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 29,
+        "question": "¿Cuál es el nombre del villano principal de la Saga de Majin Buu?",
+        "code": "",
+        "answers": [
+            "Kid Buu",
+            "Super Buu",
+            "Fat Buu",
+            "Majin Buu"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 30,
+        "question": "¿Quién es el asistente de Beerus?",
+        "code": "",
+        "answers": [
+            "Whis",
+            "Vados",
+            "Zeno",
+            "Grand Priest"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 31,
+        "question": "¿Cuál es el nombre del planeta natal de los Namekianos?",
+        "code": "",
+        "answers": [
+            "Namek",
+            "Vegeta",
+            "Earth",
+            "Sadala"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 32,
+        "question": "¿Qué forma de Frieza es la más poderosa?",
+        "code": "",
+        "answers": [
+            "First Form",
+            "Second Form",
+            "Third Form",
+            "Golden Form"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 33,
+        "question": "¿Quién destruyó el planeta Vegeta?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Beerus",
+            "Frieza",
+            "Broly"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 34,
+        "question": "¿Quién es el hijo de Vegeta y Bulma?",
+        "code": "",
+        "answers": [
+            "Goten",
+            "Gohan",
+            "Trunks",
+            "Broly"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 35,
+        "question": "¿Qué técnica usa Goku para reunir energía de otros seres vivos?",
+        "code": "",
+        "answers": [
+            "Kaioken",
+            "Instant Transmission",
+            "Spirit Bomb",
+            "Kamehameha"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 36,
+        "question": "¿Quién entrenó a Gohan cuando era niño?",
+        "code": "",
+        "answers": [
+            "Piccolo",
+            "Goku",
+            "Krillin",
+            "Vegeta"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 37,
+        "question": "¿Qué técnica permite a Goku multiplicar su fuerza y velocidad temporalmente?",
+        "code": "",
+        "answers": [
+            "Kaioken",
+            "Kamehameha",
+            "Spirit Bomb",
+            "Final Flash"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 38,
+        "question": "¿Quién fue el primer enemigo que Goku derrotó usando el Kamehameha?",
+        "code": "",
+        "answers": [
+            "Pilaf",
+            "Piccolo",
+            "Raditz",
+            "Frieza"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 39,
+        "question": "¿Cuál es el nombre del torneo donde Goku lucha contra Jiren?",
+        "code": "",
+        "answers": [
+            "Tenkaichi Budokai",
+            "Cell Games",
+            "Tournament of Power",
+            "Other World Tournament"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 40,
+        "question": "¿Quién es el emperador del universo en Dragon Ball Z?",
+        "code": "",
+        "answers": [
+            "King Kai",
+            "Grand Kai",
+            "Frieza",
+            "Beerus"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 41,
+        "question": "¿Quién es el primer villano al que Goku se enfrenta en Dragon Ball Z?",
+        "code": "",
+        "answers": [
+            "Raditz",
+            "Nappa",
+            "Vegeta",
+            "Frieza"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 42,
+        "question": "¿Qué habilidad permite a Piccolo regenerar partes de su cuerpo?",
+        "code": "",
+        "answers": [
+            "Regeneración Namekiana",
+            "Kaioken",
+            "Instant Transmission",
+            "Destructo Disk"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 43,
+        "question": "¿Quién es el amigo y rival de Goku desde la infancia?",
+        "code": "",
+        "answers": [
+            "Vegeta",
+            "Krillin",
+            "Yamcha",
+            "Tien"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 44,
+        "question": "¿Cuál es el nombre del planeta donde entrenan Goku y Vegeta con Whis?",
+        "code": "",
+        "answers": [
+            "Planeta Vegeta",
+            "Planeta Tierra",
+            "Planeta Vampa",
+            "Planeta de Beerus"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 45,
+        "question": "¿Quién fue el primer Super Saiyan en mil años?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Vegeta",
+            "Broly",
+            "Bardock"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 46,
+        "question": "¿Qué técnica usa Vegeta para destruir a su oponente con una ráfaga de energía?",
+        "code": "",
+        "answers": [
+            "Kamehameha",
+            "Final Flash",
+            "Big Bang Attack",
+            "Galick Gun"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 47,
+        "question": "¿Quién es el hijo de Goku?",
+        "code": "",
+        "answers": [
+            "Trunks",
+            "Goten",
+            "Gohan",
+            "Broly"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 48,
+        "question": "¿Cuál es el nombre del villano que absorbe a otros guerreros para aumentar su poder?",
+        "code": "",
+        "answers": [
+            "Frieza",
+            "Cell",
+            "Buu",
+            "Zamasu"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 49,
+        "question": "¿Quién destruyó a Kid Buu?",
+        "code": "",
+        "answers": [
+            "Goku",
+            "Vegeta",
+            "Gohan",
+            "Trunks"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "id": 50,
+        "question": "¿Qué usa Goku para llamar a la Nube Voladora?",
+        "code": "",
+        "answers": [
+            "Kaioken",
+            "Kamehameha",
+            "Nyoibo",
+            "Kintoun"
+        ],
+        "correctAnswer": 3
+    }
+]
