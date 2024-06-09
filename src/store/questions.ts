@@ -19,7 +19,7 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
             const data = await res.json();
             const questions = data.sort(() => Math.random() - 0.5).slice(0, limit);
             // Inicializar userSelectedAnswer como null en cada pregunta
-            questions.forEach(question => {
+            questions.forEach((question: Question) => {
                 question.userSelectedAnswer = null;
             });
             set({ questions });
