@@ -8,13 +8,13 @@ import { Footer } from './Footer';
 
 const getBackgroundColor = (info: QuestionType, index: number) => {
     if (info.userSelectedAnswer === undefined) {
-        return "#333";
+        return "#121212";
     } else if (info.userSelectedAnswer === index) {
         return info.isCorrectUserAnswer ? "#4CAF50" : "#F44336";
     } else if (info.correctAnswer === index) {
         return "#4CAF50";
     } else {
-        return "#333";
+        return "#121212";
     }
 };
 
@@ -28,14 +28,14 @@ const Question = ({ info }: { info: QuestionType }) => {
     };
 
     return (
-        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#333", p: 2, marginTop: 4 }}>
+        <Card variant="outlined" sx={{ textAlign: "left", bgcolor: "#121212", p: 2, marginTop: 4 }}>
             <Typography variant="h5">{info.question}</Typography>
 
             <SyntaxHighlighter language="javascript" style={gradientDark}>
                 {info.code}
             </SyntaxHighlighter>
 
-            <List sx={{ bgcolor: "#333" }} disablePadding>
+            <List sx={{ bgcolor: "#121212" }} disablePadding>
                 {info.answers.map((answer, index) => (
                     <ListItem key={index} disablePadding divider>
                         <ListItemButton
