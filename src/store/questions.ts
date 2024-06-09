@@ -18,7 +18,7 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
         questions: [],
         currentQuestion: 0,
         fetchQuestions: async (limit: number) => {
-            const res = await fetch("http://localhost:5174/data.json");
+            const res = await fetch("https://db-quiz-seven.vercel.app/data.json");
             const data = await res.json();
             const questions = data.sort(() => Math.random() - 0.5).slice(0, limit);
             // Inicializar userSelectedAnswer como undefined en cada pregunta
