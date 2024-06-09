@@ -23,7 +23,7 @@ const Question = ({ info }: { info: QuestionType }) => {
     // Función que genera handlers para los clicks de las respuestas
     const createHandleClick = (answerIndex: number) => () => {
         selectAnswer(info.id, answerIndex)
-        setTimeout(goNextQuestion, 500) // Espera 500ms antes de ir a la siguiente pregunta
+        setTimeout(goNextQuestion, 1000) // Espera 500ms antes de ir a la siguiente pregunta
     }
 
     // Determina el color de fondo de cada respuesta

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
-import { type Question } from '../types';
 import confetti from 'canvas-confetti';
 import { persist } from 'zustand/middleware';
+import { type Question } from '../../types';
 
 interface State {
     questions: Question[];
@@ -20,7 +20,7 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
             const questions = data.sort(() => Math.random() - 0.5).slice(0, limit);
             // Inicializar userSelectedAnswer como null en cada pregunta
             questions.forEach((question: Question) => {
-                question.userSelectedAnswer = null;
+                question.userSelectedAnswer = undefined;
             });
             set({ questions });
         },
@@ -40,7 +40,7 @@ export const useQuestionsStore = create<State>()(persist((set, get) => {
                 // Actualizar el estado de la pregunta con la respuesta seleccionada
                 newQuestions[questionIndex] = {
                     ...questionInfo,
-                    isCorrectUserAnswer,
+                    isCorrectUserAnser: isCorrectUserAnswer,
                     userSelectedAnswer: answerIndex
                 };
 
